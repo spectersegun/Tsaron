@@ -7,6 +7,7 @@ import SidebarNav from "@/src/components/SidebarNav";
 import { Dropdown, Space, Button, Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { BsChevronDown } from "react-icons/bs";
+import Image from "next/image";
 
 export default function HomeLayout() {
   const timeItems = [
@@ -110,7 +111,7 @@ export default function HomeLayout() {
               </a>
             </li>
           </ul>
-          <div className='tab-content' id='setting-content'>
+          {/* <div className='tab-content' id='setting-content'>
             <div
               className='tab-pane fade show active scroll-wrapper'
               id='todo-section'
@@ -296,7 +297,7 @@ export default function HomeLayout() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <SidebarNav />
@@ -337,9 +338,11 @@ export default function HomeLayout() {
               <div className='col-md-6 grid-margin stretch-card'>
                 <div className='card tale-bg'>
                   <div className='card-people mt-auto'>
-                    <img
+                    <Image
                       src='/images/dashboard/crash-concept-illustration-1a.jpg'
                       alt='people'
+                      width={500}
+                      height={450}
                     />
                     <div className='weather-info'>
                       <div className='d-flex'>
